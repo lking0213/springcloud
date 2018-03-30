@@ -1,0 +1,10 @@
+zuul:
+  routes:
+  #按顺序匹配
+    feign-consumer:
+      path: /books/*
+      serviceId: feign-consumer
+#      url: http://localhost:4444
+#    hello-service:
+#      path: /books/*
+#      serviceId: hello-service
